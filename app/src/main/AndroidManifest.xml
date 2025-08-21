@@ -16,6 +16,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
+    <!-- Add data extraction rules for newer Android versions -->
     <application
         android:name=".DSUSideloaderApplication"
         android:allowBackup="true"
@@ -24,6 +25,7 @@
         android:supportsRtl="true"
         android:enableOnBackInvokedCallback="true"
         android:localeConfig="@xml/locales_config"
+        android:dataExtractionRules="@xml/data_extraction_rules"
         android:theme="@style/Theme.DSUHelper">
         <activity
             android:name=".MainActivity"
